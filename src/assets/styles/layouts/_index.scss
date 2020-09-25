@@ -1,0 +1,22 @@
+body {
+    background-color: $primary-color;
+    margin: 0px;
+    font-family: $theme-font;
+    color: $font-color;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.gradient-bg {
+    background-image: linear-gradient($primary-color, $secondary-color);   
+}

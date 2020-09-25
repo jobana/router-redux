@@ -1,0 +1,25 @@
+
+.searcher {
+    @extend .flex-column;
+    margin: 50px 0;
+
+    &__title {
+        font-size: 25px;
+    }
+    
+    &__input {
+        border: 2px solid $font-color;
+        border-radius: 25px;
+        width: 80vw;
+        height: 50px;
+        padding: 0px 20px;
+        background-color: rgba(255, 255, 255, .1);
+        font-size: 16px;
+        outline: none;
+    }
+}
+
+::placeholder {
+    color: $font-color;
+    font-family: 'Muli', sans-serif;
+}

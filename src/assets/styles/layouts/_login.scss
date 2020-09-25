@@ -1,0 +1,98 @@
+.login {
+    @extend .flex-column;
+    min-height: calc(100vh -200px);
+    background-color: rgba(255, 255, 255, .1);
+    border: 2px solid $font-color;
+    border-radius: 40px;
+    padding: 0 30px;
+    width: 300px;
+    margin: calc(50vh - calc(50vh - 100px)) auto;
+    box-shadow: 1px 4px 22px -2px rgba(0,0,0,0.75);
+
+    a {
+        color: $font-color;
+        text-decoration: none;
+
+        &:hover  {
+        text-decoration: underline;
+        }
+    }
+    
+    h2 {
+        margin: 50px 0;
+    }
+    
+}
+
+.login__form {
+    @extend .flex-column;
+
+    input{
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid $font-color;
+        margin: 10px 0;
+        font-size: .8em;
+        padding: 0 0 10px 20px;
+    }
+    
+    .button {
+       background-color: rgba(255, 255, 255, .3);
+       border-radius: 30px;
+       border: none;
+       padding: 10px 0;
+       font-size: 1em;
+       color: $font-color;
+       margin: 20px 0;
+    }
+}
+
+.login__form .remember {
+    @extend .flex;
+    justify-content: space-between; 
+    font-size: .8em;
+    width: 250px;
+}
+
+.login__social {
+    margin: 50px 0;
+    @extend .flex-column;
+    font-size: .8em;
+
+    a {
+        @extend .flex;
+        margin: 5px 0;
+    }
+
+    img {
+        width: 20px;
+        padding-right: 20px;
+    }
+}
+
+.login__unregistered {
+    margin: 0 0 50px;
+
+    p {
+        font-size: .8em;
+
+        a {
+            font-size: 1.2em;
+        }
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    .login {
+        border: none;
+        background-color: transparent;
+        box-shadow: none;
+        margin: 20px auto;
+
+        h2 {
+            margin: 20px 0;
+        }
+    }
+
+}
